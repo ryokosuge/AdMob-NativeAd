@@ -7,10 +7,10 @@
 
 import UIKit
 import GoogleMobileAds
+import NendAd
 
 // test
 // private let adUnitID = "ca-app-pub-3940256099942544/3986624511"
-// kosuge
 private let adUnitID = "ca-app-pub-3010029359415397/6960102359"
 
 class ViewController: UIViewController {
@@ -51,7 +51,6 @@ class ViewController: UIViewController {
 
         // media option
         let mediaOption = GADNativeAdMediaAdLoaderOptions()
-        mediaOption.mediaAspectRatio = .landscape
 
         let options = [imageOption, videoOption, mediaOption]
 
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
         loader.delegate = self
         return loader
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
