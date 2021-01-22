@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		112209AA5B37A020E7D4B85F /* Pods_AdMob_NativeAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2693F8FB65A8D908B4D3026 /* Pods_AdMob_NativeAd.framework */; };
+		DAA705A025BAA5C400E37D41 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA7059F25BAA5C400E37D41 /* NativeAdView.xib */; };
+		DAA705AF25BAA61400E37D41 /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA705AE25BAA61400E37D41 /* NativeAdView.swift */; };
+		DAA705B625BABA8400E37D41 /* NativeAdViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA705B425BABA8400E37D41 /* NativeAdViewCollectionViewCell.swift */; };
+		DAA705B725BABA8400E37D41 /* NativeAdViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA705B525BABA8400E37D41 /* NativeAdViewCollectionViewCell.xib */; };
+		DAA705BD25BABB0800E37D41 /* DefaultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA705BB25BABB0800E37D41 /* DefaultCollectionViewCell.swift */; };
+		DAA705BE25BABB0800E37D41 /* DefaultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA705BC25BABB0800E37D41 /* DefaultCollectionViewCell.xib */; };
+		DAA705C325BAC67300E37D41 /* NativeAdLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA705C225BAC67300E37D41 /* NativeAdLoader.swift */; };
 		DAF2363C25AE7F5500A01B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2363B25AE7F5500A01B87 /* AppDelegate.swift */; };
 		DAF2363E25AE7F5500A01B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2363D25AE7F5500A01B87 /* SceneDelegate.swift */; };
 		DAF2364025AE7F5500A01B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2363F25AE7F5500A01B87 /* ViewController.swift */; };
@@ -20,6 +27,13 @@
 		8243E93ECF65DF37616B50BF /* Pods-AdMob-NativeAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob-NativeAd.release.xcconfig"; path = "Target Support Files/Pods-AdMob-NativeAd/Pods-AdMob-NativeAd.release.xcconfig"; sourceTree = "<group>"; };
 		D2693F8FB65A8D908B4D3026 /* Pods_AdMob_NativeAd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob_NativeAd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F7528CCCC0E57534AB86DE /* Pods-AdMob-NativeAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob-NativeAd.debug.xcconfig"; path = "Target Support Files/Pods-AdMob-NativeAd/Pods-AdMob-NativeAd.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA7059F25BAA5C400E37D41 /* NativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		DAA705AE25BAA61400E37D41 /* NativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
+		DAA705B425BABA8400E37D41 /* NativeAdViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		DAA705B525BABA8400E37D41 /* NativeAdViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		DAA705BB25BABB0800E37D41 /* DefaultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewCell.swift; sourceTree = "<group>"; };
+		DAA705BC25BABB0800E37D41 /* DefaultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCollectionViewCell.xib; sourceTree = "<group>"; };
+		DAA705C225BAC67300E37D41 /* NativeAdLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdLoader.swift; sourceTree = "<group>"; };
 		DAF2363825AE7F5500A01B87 /* AdMob-NativeAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdMob-NativeAd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF2363B25AE7F5500A01B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF2363D25AE7F5500A01B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +73,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DAA705B125BAA62400E37D41 /* NativeAdView */ = {
+			isa = PBXGroup;
+			children = (
+				DAA705AE25BAA61400E37D41 /* NativeAdView.swift */,
+				DAA7059F25BAA5C400E37D41 /* NativeAdView.xib */,
+			);
+			path = NativeAdView;
+			sourceTree = "<group>";
+		};
+		DAA705B325BABA5E00E37D41 /* NativeAdViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAA705B425BABA8400E37D41 /* NativeAdViewCollectionViewCell.swift */,
+				DAA705B525BABA8400E37D41 /* NativeAdViewCollectionViewCell.xib */,
+			);
+			path = NativeAdViewCell;
+			sourceTree = "<group>";
+		};
+		DAA705BA25BABAF100E37D41 /* DefaultCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAA705BB25BABB0800E37D41 /* DefaultCollectionViewCell.swift */,
+				DAA705BC25BABB0800E37D41 /* DefaultCollectionViewCell.xib */,
+			);
+			path = DefaultCell;
+			sourceTree = "<group>";
+		};
 		DAF2362F25AE7F5500A01B87 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +121,17 @@
 		DAF2363A25AE7F5500A01B87 /* AdMob-NativeAd */ = {
 			isa = PBXGroup;
 			children = (
+				DAF2364925AE7F5700A01B87 /* Info.plist */,
 				DAF2363B25AE7F5500A01B87 /* AppDelegate.swift */,
+				DAA705C225BAC67300E37D41 /* NativeAdLoader.swift */,
 				DAF2363D25AE7F5500A01B87 /* SceneDelegate.swift */,
 				DAF2363F25AE7F5500A01B87 /* ViewController.swift */,
-				DAF2364125AE7F5500A01B87 /* Main.storyboard */,
 				DAF2364425AE7F5700A01B87 /* Assets.xcassets */,
 				DAF2364625AE7F5700A01B87 /* LaunchScreen.storyboard */,
-				DAF2364925AE7F5700A01B87 /* Info.plist */,
+				DAF2364125AE7F5500A01B87 /* Main.storyboard */,
+				DAA705BA25BABAF100E37D41 /* DefaultCell */,
+				DAA705B125BAA62400E37D41 /* NativeAdView */,
+				DAA705B325BABA5E00E37D41 /* NativeAdViewCell */,
 			);
 			path = "AdMob-NativeAd";
 			sourceTree = "<group>";
@@ -151,9 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA705A025BAA5C400E37D41 /* NativeAdView.xib in Resources */,
 				DAF2364825AE7F5700A01B87 /* LaunchScreen.storyboard in Resources */,
 				DAF2364525AE7F5700A01B87 /* Assets.xcassets in Resources */,
 				DAF2364325AE7F5500A01B87 /* Main.storyboard in Resources */,
+				DAA705BE25BABB0800E37D41 /* DefaultCollectionViewCell.xib in Resources */,
+				DAA705B725BABA8400E37D41 /* NativeAdViewCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA705AF25BAA61400E37D41 /* NativeAdView.swift in Sources */,
+				DAA705C325BAC67300E37D41 /* NativeAdLoader.swift in Sources */,
 				DAF2364025AE7F5500A01B87 /* ViewController.swift in Sources */,
+				DAA705BD25BABB0800E37D41 /* DefaultCollectionViewCell.swift in Sources */,
 				DAF2363C25AE7F5500A01B87 /* AppDelegate.swift in Sources */,
+				DAA705B625BABA8400E37D41 /* NativeAdViewCollectionViewCell.swift in Sources */,
 				DAF2363E25AE7F5500A01B87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

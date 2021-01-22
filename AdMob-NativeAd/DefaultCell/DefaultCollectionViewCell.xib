@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DefaultCollectionViewCell" customModule="AdMob_NativeAd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-0S-Y0G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aEL-Dx-cVC">
+                                <rect key="frame" x="8" y="8" width="398" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14i-pi-zAg">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnP-ze-plm">
+                                        <rect key="frame" x="0.0" y="30.5" width="398" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aEL-Dx-cVC" secondAttribute="bottom" constant="8" id="8bP-lI-EIq"/>
+                            <constraint firstAttribute="trailing" secondItem="aEL-Dx-cVC" secondAttribute="trailing" constant="8" id="VV8-J2-iqp"/>
+                            <constraint firstItem="aEL-Dx-cVC" firstAttribute="top" secondItem="Lar-0S-Y0G" secondAttribute="top" constant="8" id="yuI-Z3-8bH"/>
+                            <constraint firstItem="aEL-Dx-cVC" firstAttribute="leading" secondItem="Lar-0S-Y0G" secondAttribute="leading" constant="8" id="zca-g5-WSl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lar-0S-Y0G" secondAttribute="trailing" id="2T8-te-sND"/>
+                <constraint firstItem="Lar-0S-Y0G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3oj-lt-xhh"/>
+                <constraint firstAttribute="bottom" secondItem="Lar-0S-Y0G" secondAttribute="bottom" id="Jv0-XY-tfg"/>
+                <constraint firstItem="Lar-0S-Y0G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kz2-FM-jc0"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundView" destination="Lar-0S-Y0G" id="RgJ-eJ-DmQ"/>
+                <outlet property="detailLabel" destination="gnP-ze-plm" id="Wyr-UB-anZ"/>
+                <outlet property="titleLabel" destination="14i-pi-zAg" id="TQg-iU-go5"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="74"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

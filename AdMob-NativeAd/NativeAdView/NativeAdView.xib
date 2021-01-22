@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NativeAdView" customModule="AdMob_NativeAd" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyLabel" destination="2SH-cN-lSU" id="GXw-le-hKd"/>
+                <outlet property="callToActionButton" destination="C0W-S3-gyS" id="GbA-GF-CNj"/>
+                <outlet property="headlineLabel" destination="v1x-SY-p5B" id="rW7-ot-VAr"/>
+                <outlet property="iconImageView" destination="tEI-8c-SsD" id="sFU-A4-YmH"/>
+                <outlet property="mediaView" destination="YDf-gn-Zjk" id="Wtn-Yd-mIH"/>
+                <outlet property="nativeAdView" destination="iN0-l3-epB" id="A0z-K3-Tsh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GADUnifiedNativeAdView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nt5-AH-eXQ" userLabel="Media Content View Wrapper">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDf-gn-Zjk" userLabel="Media Content View" customClass="GADMediaView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YDf-gn-Zjk" firstAttribute="top" secondItem="nt5-AH-eXQ" secondAttribute="top" id="5bm-5m-ICw"/>
+                        <constraint firstItem="YDf-gn-Zjk" firstAttribute="leading" secondItem="nt5-AH-eXQ" secondAttribute="leading" id="8Jg-OP-vow"/>
+                        <constraint firstAttribute="bottom" secondItem="YDf-gn-Zjk" secondAttribute="bottom" id="M3K-0h-E8E"/>
+                        <constraint firstAttribute="trailing" secondItem="YDf-gn-Zjk" secondAttribute="trailing" id="fN5-fL-UBw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gI-xV-nLQ" userLabel="Ad Info">
+                    <rect key="frame" x="0.0" y="233" width="414" height="80"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KS7-4H-Krg">
+                            <rect key="frame" x="8" y="8" width="398" height="64"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tEI-8c-SsD">
+                                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="64" id="68U-7d-epu"/>
+                                        <constraint firstAttribute="height" constant="64" id="a6I-zj-qgm"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iui-wz-vLm">
+                                    <rect key="frame" x="70" y="0.0" width="206" height="64"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1x-SY-p5B">
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-cN-lSU">
+                                            <rect key="frame" x="0.0" y="22.5" width="206" height="41.5"/>
+                                            <string key="text">body
+body</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0W-S3-gyS">
+                                    <rect key="frame" x="282" y="0.0" width="116" height="64"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <state key="normal" title="Call To Action"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KS7-4H-Krg" secondAttribute="bottom" constant="8" id="0JZ-Ne-JJ3"/>
+                        <constraint firstItem="KS7-4H-Krg" firstAttribute="top" secondItem="9gI-xV-nLQ" secondAttribute="top" constant="8" id="HbT-ha-2sH"/>
+                        <constraint firstItem="KS7-4H-Krg" firstAttribute="leading" secondItem="9gI-xV-nLQ" secondAttribute="leading" constant="8" id="XWN-Rv-nOl"/>
+                        <constraint firstAttribute="trailing" secondItem="KS7-4H-Krg" secondAttribute="trailing" constant="8" id="e9p-gx-8oC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="nt5-AH-eXQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3Hl-u2-g96"/>
+                <constraint firstItem="9gI-xV-nLQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gg7-DD-lHL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nt5-AH-eXQ" secondAttribute="trailing" id="OaI-eV-fYB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9gI-xV-nLQ" secondAttribute="trailing" id="PI4-s6-iHt"/>
+                <constraint firstItem="nt5-AH-eXQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e5X-yK-BRH"/>
+                <constraint firstItem="9gI-xV-nLQ" firstAttribute="top" secondItem="nt5-AH-eXQ" secondAttribute="bottom" id="v8N-TC-nWS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9gI-xV-nLQ" secondAttribute="bottom" id="xjx-6U-OBa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-255.07246376811597" y="141.62946428571428"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ySP-cU-ZoT">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-820" y="16"/>
+        </label>
+    </objects>
+</document>

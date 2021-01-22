@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NativeAdViewCollectionViewCell" customModule="AdMob_NativeAd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-ld-56y" customClass="NativeAdView" customModule="AdMob_NativeAd" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="313"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eiK-ld-56y" secondAttribute="trailing" id="Rhc-RW-v0z"/>
+                <constraint firstItem="eiK-ld-56y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WPN-FI-pfA"/>
+                <constraint firstAttribute="bottom" secondItem="eiK-ld-56y" secondAttribute="bottom" id="ndb-ym-b1u"/>
+                <constraint firstItem="eiK-ld-56y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qNR-8X-rAr"/>
+            </constraints>
+            <connections>
+                <outlet property="nativeAdView" destination="eiK-ld-56y" id="DuQ-cO-DHR"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="74"/>
+        </collectionViewCell>
+    </objects>
+</document>
